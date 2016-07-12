@@ -10,6 +10,5 @@ public class Teatcher extends User {
 
     public Teatcher() {
         this.role = Role.TEATCHER;
-
     }
 }
