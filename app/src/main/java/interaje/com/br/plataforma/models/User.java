@@ -12,6 +12,7 @@ public class User {
     private String name;
     private String lastName;
     private Boolean active;
+    private Gender gender;
 
     public Long getId() {
         return id;
@@ -59,5 +60,13 @@ public class User {
 
     public void setActive(Boolean active) {
         this.active = active;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 }
