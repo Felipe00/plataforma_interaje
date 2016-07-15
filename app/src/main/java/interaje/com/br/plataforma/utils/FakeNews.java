@@ -61,6 +61,14 @@ public class FakeNews {
         news.setTitle("Photoshop ou Sketch?");
         fakeList.add(news);
 
+        news = new News();
+        news.setAuthor("Nelson");
+        news.setCourse("Ta testando a parede");
+        news.setId(7L);
+        news.setMessage(getDefaultMessage());
+        news.setTitle("Teste");
+        fakeList.add(news);
+
         return fakeList;
     }
 
