@@ -46,11 +46,15 @@ public class NewsAdapter extends BaseAdapter {
     public View getView(int position, View parent, ViewGroup viewGroup) {
         View item = layoutInflater.inflate(R.layout.item_news_list, viewGroup, false);
 
+        News news = newsList.get(position);
+
         TextView author = (TextView) item.findViewById(R.id.item_layout_author);
         TextView title = (TextView) item.findViewById(R.id.item_layout_title);
+        TextView course = (TextView) item.findViewById(R.id.item_layout_course);
 
-        author.setText(newsList.get(position).getAuthor());
-        title.setText(newsList.get(position).getTitle());
+        author.setText(news.getAuthor());
+        title.setText(news.getTitle());
+        course.setText(news.getCourse());
 
         return item;
     }
