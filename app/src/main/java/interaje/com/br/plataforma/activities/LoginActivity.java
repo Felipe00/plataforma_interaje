@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import interaje.com.br.plataforma.R;
+import interaje.com.br.plataforma.models.User;
 
 public class LoginActivity extends AppCompatActivity {
 

@@ -16,16 +16,18 @@
 
     <EditText
         android:id="@+id/loginActivity_password"
-        android:layout_below="@+id/loginActivity_email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginActivity_email"
+        android:singleLine="true" />
 
     <Button
-        android:text="@string/loginActivity_btn_confirm"
-        android:layout_below="@id/loginActivity_password"
         android:id="@+id/loginActivity_confirm"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginActivity_password"
+        android:singleLine="true"
         android:onClick="signIn"
-        android:layout_height="wrap_content" />
+        android:text="@string/loginActivity_btn_confirm" />
 
 </RelativeLayout>
